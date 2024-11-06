@@ -20,6 +20,7 @@
     "@modules/onboarding": "file:./modules/onboarding/",
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
     "@modules/side-drawer": "file:./modules/side-drawer/",
+    "@modules/social-feed": "file:./modules/social-feed",
     "@modules/social-login": "file:./modules/social-login/",
     "@modules/splash": "file:./modules/splash/",
     "@modules/terms-and-conditions": "file:./modules/terms-and-conditions",
