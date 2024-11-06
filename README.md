@@ -61,6 +61,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-2fa](modules/2fa)
 - [react-native-onboarding](modules/onboarding)
 - [react-native-side-drawer](modules/side-drawer)
+- [react-native-social-login](modules/social-login)
 
 # Getting started: Frontend
 
