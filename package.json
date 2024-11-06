@@ -21,6 +21,7 @@
     "@modules/side-drawer": "file:./modules/side-drawer/",
     "@modules/social-login": "file:./modules/social-login/",
     "@modules/splash": "file:./modules/splash/",
+    "@modules/terms-and-conditions": "file:./modules/terms-and-conditions",
     "@modules/typeform-webhook": "file:./modules/typeform-webhook/",
     "@modules/user-profile": "file:./modules/user-profile/",
     "@react-native-masked-view/masked-view": "^0.2.9",
