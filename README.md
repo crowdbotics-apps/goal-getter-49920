@@ -66,6 +66,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-user-profile](modules/user-profile)
 - [react-native-mixpanel-analytics](modules/mixpanel-analytics)
 - [react-native-privacy-policy-webview](modules/privacy-policy-webview)
+- [react-native-splash](modules/splash)
 
 # Getting started: Frontend
 
