@@ -17,6 +17,7 @@
     "@modules/2fa": "file:./modules/2fa/",
     "@modules/mixpanel-analytics": "file:./modules/mixpanel-analytics/",
     "@modules/onboarding": "file:./modules/onboarding/",
+    "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
     "@modules/side-drawer": "file:./modules/side-drawer/",
     "@modules/social-login": "file:./modules/social-login/",
     "@modules/typeform-webhook": "file:./modules/typeform-webhook/",
@@ -43,7 +44,7 @@
     "react-native-screens": "^3.20.0",
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "^0.18.10",
-    "react-native-webview": "^11.17.0",
+    "react-native-webview": "11.23.0",
     "react-redux": "^8.0.5",
     "redux": "^4.2.1"
   },
