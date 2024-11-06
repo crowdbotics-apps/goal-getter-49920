@@ -1,34 +1,36 @@
-import React from "react"
-import {
-  View,
-  Image,
-  Text,
-  ScrollView,
-  SafeAreaView,
-  StyleSheet
-} from "react-native"
+import React from "react";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet, TouchableOpacity } from "react-native";
+import { LinearGradient } from 'expo-linear-gradient';
 
 const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
-        <View style={styles.group} />
-        <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
-          <Text style={styles.text}>
-            Let's build something amazing together!
-          </Text>
-        </View>
-        <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
-      </ScrollView>
-    </SafeAreaView>
-  )
-}
+  return <SafeAreaView style={styles.container}>
+      <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.gradient}>
+        <ScrollView contentContainerStyle={styles.scrollView}>
+          <View style={styles.group} />
+          <View style={styles.group}>
+            <Image style={styles.logo} source={{
+            uri: "https://tinyurl.com/42evm3m3"
+          }} />
+            <Text style={styles.title}>Goal Getter</Text>
+            <Text style={styles.text}>
+              Let's build something amazing together!
+            </Text>
+          </View>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>GET STARTED</Text>
+          </TouchableOpacity>
+          <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
+        </ScrollView>
+      </LinearGradient>
+    </SafeAreaView>;
+};
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#F8F8FC",
-    height: "100%"
+    flex: 1
+  },
+  gradient: {
+    flex: 1
   },
   scrollView: {
     flex: 1,
@@ -46,19 +48,37 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     margin: 40
   },
+  title: {
+    textAlign: "center",
+    fontSize: 36,
+    color: "#FFFFFF",
+    fontWeight: "bold",
+    marginVertical: 20
+  },
   text: {
     textAlign: "center",
     fontSize: 28,
-    color: "#828AB0",
-    fontWeight: 700
+    color: "#FFFFFF",
+    fontWeight: "700"
+  },
+  button: {
+    backgroundColor: "#FFFFFF",
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 30,
+    marginVertical: 20
+  },
+  buttonText: {
+    color: "#3b5998",
+    fontSize: 18,
+    fontWeight: "bold"
   },
   footer: {
     textAlign: "center",
     fontSize: 18,
-    color: "#828AB0",
-    fontWeight: 700,
+    color: "#FFFFFF",
+    fontWeight: "700",
     marginBottom: 20
   }
-})
-
-export default WelcomeScreen
+});
+export default WelcomeScreen;
